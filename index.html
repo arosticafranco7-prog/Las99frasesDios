@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Las 99 frases</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Las 99 frases</h1>
+  <button id="cartBtn">🛒 Carrito (<span id="cartCount">0</span>)</button>
+</header>
+
+<section class="hero">
+  <h2>Frases que venden, impactan y destacan</h2>
+  <p>Tu estilo empieza con una frase.</p>
+</section>
+
+<section id="products" class="grid"></section>
+
+<!-- CARRITO -->
+<div id="cartPanel" class="cart hidden">
+  <h2>Tu carrito</h2>
+  <div id="cartItems"></div>
+  <h3>Total: $<span id="cartTotal">0</span></h3>
+  <button onclick="checkout()">Finalizar compra</button>
+  <button onclick="toggleCart()">Cerrar</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
